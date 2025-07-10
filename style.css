@@ -1,0 +1,189 @@
+/* ===== Import Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #fff, #fed7ad);
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ===== Navbar ===== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #7a4e00;
+  text-shadow: 2px 2px 5px #b38b5c;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff914d;
+  transform: scale(1.05);
+}
+
+nav .contact-btn {
+  padding: 0.6rem 1.4rem;
+  border: 2px solid #7a4e00;
+  border-radius: 30px;
+  background: transparent;
+  color: #7a4e00;
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: inset 0 0 0 0 #7a4e00;
+}
+
+nav .contact-btn:hover {
+  background: #7a4e00;
+  color: white;
+  box-shadow: inset 200px 0 0 0 #7a4e00;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.hero h1 span {
+  color: #7a4e00;
+  text-shadow: 0 0 6px #7a4e00;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.hero h2 span {
+  color: #ff914d;
+  text-shadow: 1px 1px 5px #ff914d;
+}
+
+.hero p {
+  max-width: 720px;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* ===== Social Icons ===== */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #7a4e00;
+  border-radius: 50%;
+  color: #7a4e00;
+  font-size: 1.3rem;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #7a4e00;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 0 12px #7a4e00;
+}
+
+/* ===== Button Style ===== */
+.hero .cv-btn {
+  background: linear-gradient(to right, #7a4e00, #ff914d);
+  color: white;
+  padding: 0.9rem 2.5rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.hero .cv-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(122, 78, 0, 0.4);
+  background: linear-gradient(to right, #ff914d, #7a4e00);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  nav ul, nav .contact-btn {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+}
